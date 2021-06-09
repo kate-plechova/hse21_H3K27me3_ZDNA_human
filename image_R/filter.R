@@ -2,9 +2,8 @@ library(ggplot2)
 library(dplyr)
 
 #NAME <- 'H3K27me3_SK-N-SH.ENCFF403PWJ.hg19'
-
 NAME <- 'H3K27me3_SK-N-SH.ENCFF493XGA.hg19'
-
+OUT_DIR <- 'Results/'
 ###
 
 bed_df <- read.delim(paste0('Giston/', NAME, '.bed'), as.is = TRUE, header = FALSE)
