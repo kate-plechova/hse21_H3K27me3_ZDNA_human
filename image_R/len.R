@@ -4,16 +4,20 @@ library(dplyr)
 # library(tibble)  # column_to_rownames
 
 ###
+DATA_DIR <- 'Giston/'
+OUT_DIR <- 'Results/'
 
 #NAME <- 'H3K27me3_SK-N-SH.ENCFF403PWJ.hg19'
 #NAME <- 'H3K27me3_SK-N-SH.ENCFF403PWJ.hg38'
 #NAME <- 'H3K27me3_SK-N-SH.ENCFF493XGA.hg19'
 #NAME <- 'H3K27me3_SK-N-SH.ENCFF493XGA.hg38'
-OUT_DIR <- 'Results/'
+NAME <- 'DeepZ'
+
 
 ###
 
 bed_df <- read.delim(paste0('Giston/', NAME, '.bed'), as.is = TRUE, header = FALSE)
+head(bed_df)
 colnames(bed_df) <- c('chrom', 'start', 'end', 'name', 'score')
 bed_df$len <- bed_df$end - bed_df$start
 head(bed_df)
