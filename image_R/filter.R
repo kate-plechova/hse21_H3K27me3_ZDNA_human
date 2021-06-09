@@ -1,9 +1,11 @@
 library(ggplot2)
 library(dplyr)
 
+
+DATA_DIR <- 'GitHub/hse21_H3K27me3_ZDNA_human/data/'
+OUT_DIR <- 'GitHub/hse21_H3K27me3_ZDNA_human/image/'
 #NAME <- 'H3K27me3_SK-N-SH.ENCFF403PWJ.hg19'
 NAME <- 'H3K27me3_SK-N-SH.ENCFF493XGA.hg19'
-OUT_DIR <- 'Results/'
 ###
 
 bed_df <- read.delim(paste0('Giston/', NAME, '.bed'), as.is = TRUE, header = FALSE)
