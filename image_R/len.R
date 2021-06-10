@@ -7,11 +7,12 @@ library(dplyr)
 DATA_DIR <- 'GitHub/hse21_H3K27me3_ZDNA_human/data/'
 OUT_DIR <- 'GitHub/hse21_H3K27me3_ZDNA_human/image/'
 
+NAME <- 'H3K27me3_SK-N-SH.intersect_with_DeepZ'
 #NAME <- 'H3K27me3_SK-N-SH.ENCFF403PWJ.hg19'
 #NAME <- 'H3K27me3_SK-N-SH.ENCFF403PWJ.hg38'
 #NAME <- 'H3K27me3_SK-N-SH.ENCFF493XGA.hg19'
 #NAME <- 'H3K27me3_SK-N-SH.ENCFF493XGA.hg38'
-NAME <- 'DeepZ'
+#NAME <- 'DeepZ'
 
 
 ###
